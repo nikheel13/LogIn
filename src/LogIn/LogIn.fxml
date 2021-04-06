@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="673.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.LogInController">
+    <children>
+        <ImageView fitHeight="497.0" fitWidth="712.0" layoutX="-39.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Images/Background.jpg" />
+            </image>
+        </ImageView>
+      <StackPane fx:id="parentContainer" layoutX="208.0" layoutY="16.0" prefHeight="417.0" prefWidth="327.0">
+         <children>
+              <AnchorPane opacity="0.92" prefHeight="417.0" prefWidth="327.0" style="-fx-background-color: #353232; -fx-background-radius: 10;">
+                  <children>
+                      <TextField fx:id="txtUsername" layoutX="23.0" layoutY="127.0" prefHeight="25.0" prefWidth="270.0" promptText="Email" style="-fx-background-radius: 10;" styleClass="fx" />
+                      <PasswordField fx:id="txtPassword" layoutX="23.0" layoutY="167.0" prefHeight="25.0" prefWidth="270.0" promptText="Password" style="-fx-background-radius: 10;" />
+                      <Button fx:id="btnSignIn" layoutX="73.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: #2A0033; -fx-background-radius: 10;" text="Sign In " textFill="WHITE" />
+                      <ImageView fitHeight="91.0" fitWidth="87.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@Images/Logo.png" />
+                          </image>
+                      </ImageView>
+                  <Label fx:id="lblErrors" layoutX="28.0" layoutY="219.0" prefHeight="17.0" prefWidth="251.0" text="Label" />
+                  <Hyperlink layoutX="23.0" layoutY="196.0" text="Forgot your password?" />
+                  <Button fx:id="btnSignIn1" layoutX="74.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: #3b5998; -fx-background-radius: 10;" text="Sign In with      " textFill="WHITE" />
+                  <Button fx:id="btnSignUp" layoutX="75.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#SignUpButtonAction" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Sign Up with       " textFill="WHITE" />
+                  <ImageView fitHeight="23.0" fitWidth="26.0" layoutX="177.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/facebook-logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="26.0" layoutX="179.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Logo.png" />
+                     </image>
+                  </ImageView>
+                  </children>
+              </AnchorPane>
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>
